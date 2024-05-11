@@ -1,0 +1,18 @@
+if(isAlphabet(entered))
+      {
+        const result = e.target.value.replace(/[a-zA-Z]/g, '');
+      setMain(result);
+      }
+    if(isNumber(entered))
+      {
+        setMain(e.target.value)
+      }
+   else if(main.length == 0 && (!isNumber(e.target.value)))
+    {
+      setMain(main)
+    }
+    else if(!isNumber(main[main.length-1]) && !isNumber(entered))
+      {
+        setMain(main)
+      }
+     

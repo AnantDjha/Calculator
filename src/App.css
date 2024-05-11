@@ -1,0 +1,277 @@
+.outerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width:100vw;
+}
+.calci{
+  width: 40rem;
+  height:85vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+  /* border-radius: 1rem; */
+  border-top:1.5rem solid grey;
+  border-bottom: 1rem solid grey;
+  border-left: 5px solid grey;
+  border-right: 5px solid grey;
+  border-radius: 0.4rem;
+  justify-content: center;
+}
+
+.inputField{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 16%;
+  background-color: aqua;
+}
+.mainText{
+  height:80%;
+  border:none;
+  outline: none;
+  text-align: right;
+  padding:1rem;
+  background-color: black;
+  font-size: 40px;
+  color: white;
+  
+}
+
+.output{
+  height:1.5rem;
+  outline: none;
+  border: none;
+  text-align: right;
+  color:grey;
+  font-size: 20px;
+  padding:0.3rem 1rem;
+  background-color: black;
+  margin: 0;
+  height:20%;
+}
+
+.button{
+  height: 80%;
+  background-color:grey ;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.numberBtn{
+  height:100%;
+  width:75%;
+  background-color: grey;
+}
+.num{
+  display: flex;
+  /* flex-direction: column; */
+  height: 95%;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+  /* display: grid; */
+  /* grid-row: 3; */
+  /* grid-auto-columns: auto; */
+}
+.BtnOfNum{
+  height: 6rem;
+  width:6rem;
+  margin: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  background-color: rgb(87, 82, 82);
+  color: white;
+}
+.BtnOfNum img{
+  height: 4rem;
+  width:4rem;
+}
+#clear{
+  background-color: black;
+}
+
+.operator{
+  display: flex;
+  flex-direction: column;
+  background-color:grey;
+  width:25%;
+  padding: 1.5rem 0;
+  height: 100%;
+ 
+}
+.plusMinus{
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  /* background-color: blue; */
+  width: 100%;
+  border-radius: 10px;
+  /* margin: 10px; */
+  justify-content: center;
+}
+
+.op{
+  height: 25%;
+  width: 100%;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin:5px 0;
+  font-size: 50px;
+}
+.equal{
+  height:25%;
+  
+}
+.equal button{
+  width:100%;
+  height:75%;
+  background-color: black;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 50px;
+  color:white;
+
+}
+.equal button:active{
+  opacity: 0.7;
+
+}
+.op:active{
+  opacity: 0.7;
+}
+
+@media only screen and (max-height:858px)
+{
+  
+  .operator{
+    height: 97%;
+  }
+  .BtnOfNum{
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media only screen and (max-width:644px)
+{
+  body{
+    background-color: grey;
+  }
+  .calci{
+
+    height:95vh;
+    width:100vh;
+  }
+  .mainText{
+    font-size: 34px;
+  }
+  
+}
+
+@media only screen and (max-width:565px)
+{
+  .BtnOfNum{
+    height:5rem;
+    width:5rem;
+  }
+  .mainText{
+    font-size: 34px;
+  }
+  .mainText{
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width:524px)
+{
+  .mainText{
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width:501px)
+{
+  .BtnOfNum{
+    height:4.5rem;
+    width:4.5rem;
+  }
+  .mainText{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width:469px)
+{
+  .BtnOfNum{
+    margin:0.5rem;
+  }
+}
+@media only screen and (max-width:412px)
+{
+  .num{
+    padding:0.3rem;
+  }
+  .mainText{
+    font-size: 24px;
+  }
+  .output{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width:375px)
+{
+  .BtnOfNum{
+    height: 4.2rem;
+    width:4.2rem;
+  }
+  .mainText{
+    font-size: 21px;
+  }
+  .output{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-height:800px)
+{
+  
+  .BtnOfNum{
+    height: 14%;
+    width: 18%;
+  }
+}
+@media only screen and (max-height:800px)
+{
+  
+  .BtnOfNum{
+    height: 4.2rem;
+    width:4.2rem;
+  }
+}
+@media only screen and (max-width:375px)
+{
+  .BtnOfNum{
+    height: 4rem;
+    width:4rem;
+  }
+  .mainText{
+    font-size: 21px;
+  }
+  .output{
+    font-size: 18px;
+  }
+}
