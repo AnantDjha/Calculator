@@ -142,8 +142,13 @@ function App() {
                     {
                       return
                     }
-                  let v = inpRef.current.textContent.substring(1)
-                  // inpRef.current.textContent = ''
+                    let v = ""
+                    if(inpRef.current.textContent != "")
+                      {
+                        
+                        v = inpRef.current.textContent.substring(1)
+                      }
+                      // inpRef.current.textContent = ''
                   setMain(v)
                 }}>=</button>
               </div>
